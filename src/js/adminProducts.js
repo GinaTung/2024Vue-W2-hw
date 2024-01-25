@@ -39,12 +39,12 @@ createApp({
       axios
         .post(`${this.api_url}/api/user/check`)
         .then((res) => {
-          console.log(res);
+          // console.log(res);
           // alert(`驗證成功`);
           this.getProducts();
         })
         .catch((err) => {
-          console.log(err);
+          // console.log(err);
           alert(`${err.data.message}`);
           window.location = "adminLogin.html";
         });
@@ -53,12 +53,12 @@ createApp({
       axios
         .get(`${this.api_url}/api/${this.api_path}/admin/products`)
         .then((res) => {
-          console.log(res);
+          // console.log(res);
           this.products = res.data.products;
           // alert(`已取得產品列表`)
         })
         .catch((err) => {
-          console.log(err);
+          // console.log(err);
           alert(`${err.data.message}`);
         });
     },
@@ -73,12 +73,12 @@ createApp({
           this.singleProduct
         )
         .then((res) => {
-          console.log(res);
+          // console.log(res);
           alert(`已建立產品`);
           this.getProducts();
         })
         .catch((err) => {
-          console.log(err);
+          // console.log(err);
           alert(`${err.data.message}`);
         });
     },
@@ -89,13 +89,13 @@ createApp({
           `${this.api_url}/api/${this.api_path}/admin/product/${productId}`
         )
         .then((res) => {
-          console.log(res);
+          // console.log(res);
           this.productId = productId;
           alert(`已刪除${this.productId}產品`);
           this.getProducts();
         })
         .catch((err) => {
-          console.log(err);
+          // console.log(err);
           alert(`${err.data.message}`);
         });
     },
@@ -127,13 +127,13 @@ const app2 = {
       axios
         .post(`${this.api_url}/logout`)
         .then((res) => {
-          console.log(res);
+          // console.log(res);
           alert(`${res.data.message}`);
           document.cookie = "hexToken=; expires=";
           window.location = "index.html";
         })
         .catch((err) => {
-          console.log(err);
+          // console.log(err);
           alert(`${err.data.message}`);
           window.location = "adminLogin.html";
         });
