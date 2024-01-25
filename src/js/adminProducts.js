@@ -15,14 +15,14 @@ createApp({
       tempProduct2: {},
       singleProduct: {
         data: {
-          title: "taiwan a",
+          title: "taiwan B",
           category: "風景",
-          origin_price: 100,
-          price: 80,
+          origin_price: 300,
+          price: 240,
           unit: "個",
           description: "台北101",
           content: "這是內容",
-          is_enabled: 0,
+          is_enabled: 1,
           imageUrl:
             "https://images.unsplash.com/photo-1519126400611-d57095205936?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           imagesUrl: [
