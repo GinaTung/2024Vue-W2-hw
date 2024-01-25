@@ -117,7 +117,7 @@
                 </div>
               </div>
               <template v-for="(image, id) in tempProduct.imagesUrl" :key="id">
-                <img v-if="image" :src="image" :alt="products.title" class="images m-2 w-100">
+                <img v-if="image" :src="image" class="images m-2 w-100">
               </template>
             </template>
             <p class="text-secondary" v-else>請選擇一個商品查看</p>
